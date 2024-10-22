@@ -1,0 +1,191 @@
+/* General Kanban Board Styles */
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    
+  }
+  
+  .controls {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown Toggle Button */
+  .dropdown-toggle {
+    background-color:white;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-left: 10px;
+    height: 30px;
+ }
+  
+  .dropdown-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 4px;
+    top: 45px; /* Positions the dropdown below the button */
+    left: 0;
+    margin-left: 10px;
+  }
+  
+  .dropdown-menu .dropdown {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 30px;
+  }
+  
+  .dropdown-menu label {
+    
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown-menu select {
+    margin-left: 50px;
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 50%;
+    
+  }
+  
+  /* Kanban Columns */
+  .kanban-columns {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .kanban-column {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 10px;
+
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .kanban-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .color{
+    background-color:#c22a2a ;
+  }
+  
+
+  
+
+  /* Card container */
+  .kanban-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; /* Reduced font size */
+    margin-bottom: 8px;
+  }
+  
+  /* User avatar */
+  .user-avatar {
+    width: 24px; /* Reduced avatar size */
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  /* Title and Status icon section */
+  .card-title-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  /* Status icon */
+  .status-icon {
+    width: 12px; /* Reduced status icon size */
+    height: 12px;
+    margin-right: 6px;
+  }
+  
+  /* Ticket title */
+  .ticket-title {
+     /* Reduced ticket title font size */
+    margin: 0;
+    font-weight: 1000;
+    font-size: 10px;
+  }
+  
+  /* Footer styling (priority icon and tag) */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    font-size: 12px; /* Reduced footer text font size */
+  }
+  
+  /* Priority icon */
+  .priority-icon {
+    width: 12px; /* Reduced priority icon size */
+    height: 12px;
+    margin-right: 6px;
+  }
+  
+  /* Gray dot for tag */
+  .gray-dot {
+    width: 6px; /* Reduced gray dot size */
+    height: 6px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  
+  /* Tag container */
+  .tag-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Feature request tag */
+  .feature-tag {
+    font-size: 12px; /* Reduced feature tag font size */
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .kanban-columns {
+      flex-direction: column;
+    }
+  
+    .kanban-column {
+      margin: 0 0 20px 0;
+    }
+  }
